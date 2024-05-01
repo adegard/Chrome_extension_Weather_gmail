@@ -1,4 +1,4 @@
-
+//insert image in DOM
 function AddImage(imageurl, selector){
     if ( document.body.innerHTML.indexOf(imageurl) > -1) {
       console.log('Image exists. ');
@@ -14,7 +14,7 @@ function AddImage(imageurl, selector){
 
     }
 }
-
+//check if image exist (for future updates)
 function waitForElementToExist(selector) {
   return new Promise(resolve => {
     if (document.querySelector(selector)) {
@@ -35,6 +35,7 @@ function waitForElementToExist(selector) {
   });
 }
 
+//personalize with own Lat and Lon Geo coordinates:
 let url ='https://api.open-meteo.com/v1/forecast?latitude=45.5959&longitude=9.0757&daily=weather_code&timezone=Europe%2FBerlin&forecast_days=1'
 
 async function fetchData() {
@@ -48,6 +49,7 @@ async function fetchData() {
     const ww = data.daily.weather_code;
 	ww[0];
 
+	  //list of weather codes vs icons (to be comleted):
 	let dataww = {
 	 "list": [
 	   {"ww":"0","urlico":"https://cdn.icon-icons.com/icons2/3993/PNG/512/summer_sunny_sun_weather_forecast_sky_bright_icon_253959.png"},
