@@ -28,3 +28,11 @@ Code 	Description </br>
 85, 86 	Snow showers slight and heavy </br>
 95 * 	Thunderstorm: Slight or moderate </br>
 96, 99 * 	Thunderstorm with slight and heavy hail </br>
+
+## todo
+
+- complete the weather code vs icons list
+- add click on to go on weather page (which one)
+- setting icons packs
+
+  
