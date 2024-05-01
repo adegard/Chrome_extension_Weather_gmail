@@ -7,13 +7,13 @@ The icon changes based on weather code, given by a free API call.
 ![alt text](https://github.com/adegard/Chrome_extension_template_modify_DOM/blob/main/Screenshot.png?raw=true)
 
 
-Builder API from Open Meteo:
-https://open-meteo.com/en/docs#latitude=45.5959&longitude=9.0757&hourly=weather_code&timezone=Europe%2FBerlin&forecast_days=1
-
-weather icons
+## Weather icons from icon-icons.com:
 https://icon-icons.com/pack/Weather/3993
 
-WMO Weather interpretation codes (WW)
+## Builder API from Open Meteo:
+https://open-meteo.com/en/docs#latitude=45.5959&longitude=9.0757&hourly=weather_code&timezone=Europe%2FBerlin&forecast_days=1
+
+## WMO Weather interpretation codes (WW)
 Code 	Description </br>
 0 	Clear sky </br>
 1, 2, 3 	Mainly clear, partly cloudy, and overcast </br>
