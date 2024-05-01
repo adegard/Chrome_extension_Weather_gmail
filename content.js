@@ -4,10 +4,14 @@ function AddImage(imageurl, selector){
       console.log('Image exists. ');
       } else {
         console.log('Image does not exists.')
-        const image = document.createElement('img')
-        image.src = imageurl;
-        image.style.height = '50px';
-        document.querySelector(selector).prepend(image)
+        waitForElementToExist(selector).then(element => {
+	  console.log('The element exists', element);
+		const image = document.createElement('img')
+		image.src = imageurl;
+		image.style.height = '50px';
+		document.querySelector(selector).prepend(image)	  
+	});
+
     }
 }
 
@@ -32,10 +36,6 @@ function waitForElementToExist(selector) {
 }
 
 // 👇️ using the function
-waitForElementToExist('.z0').then(element => {
-	  console.log('The element exists', element);
-	  AddImage("https://cdn.icon-icons.com/icons2/2313/PNG/512/plant_nature_leaves_leaf_dirt_earth_icon_141982.png", 
+
+AddImage("https://cdn.icon-icons.com/icons2/4188/PNG/512/game_mail_gold_message_communication_envelope_email_letter_send_icon_262419.png", 
 		 '.z0');
-});
-
-
